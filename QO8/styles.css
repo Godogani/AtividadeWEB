@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Medieval;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-image: url(https://img.freepik.com/fotos-gratis/parede-de-madeira-riscado-conceito-material-da-textura-do-fundo_53876-30226.jpg?w=2000);
+  width: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo span {
+  color: #fff;
+  padding-left: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+  letter-spacing: 5px;
+}
+header img {
+  height: 60px;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+}
+li {
+  list-style: none;
+  padding: 0 5px;
+}
+li a {
+  color: rgb(238, 245, 144);
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000;
+  text-decoration: none;
+}
+input {
+  border-radius: 5px;
+  padding: 4px 36px;
+}
+button {
+  color: #25200c;
+  background-color: #fa8c25b0;
+  padding: 8px;
+  border: 1px solid #25200c;
+  border-radius: 5px;
+}
+button:hover {
+  cursor: pointer;
+  padding: 10px;
+}
+
+@font-face {
+  font-family: Medieval;
+  src: url("./fonts/MedievalSharp-Regular.ttf");
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.about-banner {
+  text-align: center;
+}
+.content {
+  display: flex;
+  justify-content: center;
+}
+.half {
+  margin-left: 10px;
+}
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.items img {
+  width: 80%;
+}

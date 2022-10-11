@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="styles.css
+    "
+    />
+    <title>Lança os pares pro pai</title>
+  </head>
+  <body>
+    <nav>Pares? Quantos?</nav>
+    <div class="form">
+      <span class="contador">Quantos pares?</span>
+      <input
+        id="number"
+        type="number"
+        name="content"
+        placeholder="Reorganizar o texto aqui"
+      />
+
+      <button onclick="ESCREVER_PARES()">Organizar</button>
+    </div>
+    <script>
+      const ESCREVER_PARES = () => {
+        quant = document.getElementById("number").value;
+        vet = [];
+        for (i = 0; i < quant; i++) {
+          vet[i] = 2 * i;
+        }
+        localStorage.setItem("vet", vet);
+        window.location.replace("resultado.html");
+      };
+    </script>
+  </body>
+</html>

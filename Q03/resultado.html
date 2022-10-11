@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="styles.css
+    "
+    />
+    <script
+      src="https://kit.fontawesome.com/ccdc00d7bd.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>MMC Calculator</title>
+  </head>
+  <body>
+    <header>
+      <i class="fa-solid fa-calculator"></i>
+      Calculadora de MMC
+    </header>
+    <h1 class="title">Insira os números abaixo</h1>
+    <div class="form">
+        <span id="result"></span>
+
+      <button onclick="window.location.replace('./index.html')">
+        Calcular outro valor
+      </button>
+    </div>
+    <script>
+      mdc = localStorage.getItem("mdc");
+      n1 = localStorage.getItem("n1");
+      n2 = localStorage.getItem("n2");
+      if (mdc != null) {
+        document.getElementById(
+          "result"
+        ).textContent = `O MDC entre ${n1} e ${n2} é ${mdc}`;
+      }
+    </script>
+  </body>
+</html>
